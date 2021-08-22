@@ -21,13 +21,6 @@ class R013_ArrowFunction extends Component {
             console.log(num3 + ' . Arrow Function : ' + this.state.arrowFuc);
         }
 
-        Function3() {
-            var this_bind = this;
-            setTimeout(function () {
-                console.log(this_bind.state.num + '. Es5 Callback function noBind');
-            })
-        }
-
     }
 
     render() {
