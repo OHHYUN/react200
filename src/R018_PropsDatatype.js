@@ -4,7 +4,7 @@ import datatype, { object } from 'prop-types';
 class R018_PropsDatatype extends Component {
     render() {
         let {
-            String, Number, Boolean, Array, Object, Function
+            String, Number, Boolean, Array, ObjectJson, Function
         } = this.props
         return (
             <div>
@@ -12,7 +12,7 @@ class R018_PropsDatatype extends Component {
                 <p>NumberProps: {Number}</p>
                 <span>BooleanProps: {Boolean.toString()}</span>
                 <p>ArrayProps: {Array.toString()}</p>
-                <p>Object JsonProps: {JSON.stringify(Object)}</p>
+                <p>Object JsonProps: {JSON.stringify(ObjectJson)}</p>
                 <p>FunctionProps: {Function}</p>
 
             </div>
@@ -25,7 +25,7 @@ R018_PropsDatatype.propTypes = {
     Number: datatype.number,
     Boolean: datatype.bool,
     Array: datatype.array,
-    Object: datatype.object,
+    ObjectJson: datatype.object,
     Function: datatype.func
 }
 export default R018_PropsDatatype
